@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- custom font style -->
+    <!--<style name="CustomFontType" parent="android:TextAppearance">-->
+        <!--&lt;!&ndash; Custom Attr&ndash;&gt;-->
+        <!--<item name="fontPath">fonts/custom_font.ttf</item>-->
+    <!--</style>-->
+
+
 </resources>
