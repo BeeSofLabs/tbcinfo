@@ -16,7 +16,7 @@ public class App extends BaseApp {
         context = getApplicationContext();
 
         setupBuilder(DaggerAppComponent.builder(), this);
-        setupDefaultFont("fonts/SF-Pro-Display-Black.otf");
+        setupDefaultFont("font/SF-Pro-Display-Black.otf");
 
     }
 

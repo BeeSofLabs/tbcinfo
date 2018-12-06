@@ -3,4 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!-- custom color -->
+    <color name="color_yellow">#fccb05</color>
+    <color name="color_grey">#9b9b9b</color>
+    <color name="color_grey2">#f3f3f3</color>
+    <color name="color_grey3">#d8d8d8</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black2">#1e1e1e</color>
+    <color name="color_red">#eb212f</color>
+
+    <color name="color_dayname">#4a4a4a</color>
+    <color name="color_background_slide">#66000000</color>
 </resources>

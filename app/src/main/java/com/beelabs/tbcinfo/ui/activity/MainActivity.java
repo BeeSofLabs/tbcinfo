@@ -1,6 +1,8 @@
-package com.beelabs.tbcinfo;
+package com.beelabs.tbcinfo.ui.activity;
 
 import android.os.Bundle;
+
+import com.beelabs.tbcinfo.R;
 
 import app.beelabs.com.codebase.base.BaseActivity;
 import butterknife.ButterKnife;

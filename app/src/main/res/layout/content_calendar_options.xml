@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/panel_background_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/color_background_slide"
+        android:clickable="true"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/panel_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/color_yellow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/option_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="24dp"
+            android:paddingTop="21dp"
+            android:paddingBottom="14dp"
+            android:text="Detail"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_white"/>
+
+        <TextView
+            android:id="@+id/option_mark_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Mark as Done"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_white"/>
+
+        <TextView
+            android:id="@+id/option_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Delete"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</FrameLayout>
