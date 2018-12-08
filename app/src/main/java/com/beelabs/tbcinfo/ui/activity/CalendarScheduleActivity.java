@@ -63,37 +63,50 @@ public class CalendarScheduleActivity extends BaseActivity {
     private View panelSlideBottom;
     private static int childId;
 
+
     private NavigationView.OnNavigationItemSelectedListener mNavListener = item -> {
         Intent intent;
 
         switch (item.getItemId()) {
 
-            case R.id.nav_todo:
+            case R.id.nav_dashboard:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
 //                intent = new Intent(this, TodoListActivity.class);
 //                startActivity(intent);
                 return true;
-            case R.id.nav_profile:
+            case R.id.nav_calendar:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
 //                intent = new Intent(this, ProfileActivity.class);
 //                startActivity(intent);
                 return true;
-            case R.id.nav_riwayat:
+            case R.id.nav_alarm:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
 //                intent = new Intent(this, HistoryActivity.class);
 //                startActivity(intent);
                 return true;
-            case R.id.nav_merchant_list:
+            case R.id.nav_article:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
 //                intent = new Intent(this, MerchantListActivity.class);
 //                startActivity(intent);
                 return true;
 
-            case R.id.nav_help:
+            case R.id.nav_statistic:
+                drawerLayout.closeDrawers();
+                item.setChecked(false);
+
+                return true;
+
+            case R.id.nav_notif:
+                drawerLayout.closeDrawers();
+                item.setChecked(false);
+
+                return true;
+
+            case R.id.nav_biodata:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
 

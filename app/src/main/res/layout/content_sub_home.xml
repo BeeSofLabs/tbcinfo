@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- content -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_red">
+
+        <ImageView
+            android:id="@+id/button_menu"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/list"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="371dp"
+            tools:layout_editor_absoluteY="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Beranda"
+            android:textColor="@color/color_white" />
+
+        <ImageView
+            android:id="@+id/button_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/annual_calendar"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="371dp"
+            tools:layout_editor_absoluteY="17dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_red">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_jadwal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pager_jadwal">
+
+                <include layout="@layout/content_user_profile" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/photo_user_placeholder" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:text="Waktu Sekarang 8 Des 2018 21:32:33"
+                android:textAlignment="center"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

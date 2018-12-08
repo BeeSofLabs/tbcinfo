@@ -6,30 +6,49 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_todo"
+            android:id="@+id/nav_dashboard"
             android:checkable="true"
-            android:title="To-do List"
+            android:icon="@drawable/home_icon"
+            android:title="Beranda"
             app:showAsAction="ifRoom" />
         <item
-            android:id="@+id/nav_riwayat"
+            android:id="@+id/nav_calendar"
             android:checkable="true"
-            android:title="Riwayat"
+            android:icon="@drawable/calendar_icon"
+            android:title="Kalendar"
             app:showAsAction="ifRoom" />
         <item
-            android:id="@+id/nav_merchant_list"
+            android:id="@+id/nav_alarm"
             android:checkable="true"
-            android:title="Merchant List"
+            android:icon="@drawable/alarm_icon"
+            android:title="Alarm"
             app:showAsAction="ifRoom" />
         <item
-            android:id="@+id/nav_profile"
+            android:id="@+id/nav_article"
             android:checkable="true"
-            android:title="Profil Saya"
+            android:icon="@drawable/video_icon"
+            android:title="Artikel Edukasi"
             app:showAsAction="ifRoom" />
 
         <item
-            android:id="@+id/nav_help"
+            android:id="@+id/nav_statistic"
             android:checkable="true"
-            android:title="Bantuan"
+            android:icon="@drawable/stats_icon"
+            android:title="Statistic"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_notif"
+            android:checkable="true"
+            android:icon="@drawable/notif_icon"
+            android:title="Notification"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_biodata"
+            android:checkable="true"
+            android:icon="@drawable/biodata_icon"
+            android:title="Biodata"
             app:showAsAction="ifRoom" />
 
 
