@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_todo"
+            android:checkable="true"
+            android:title="To-do List"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/nav_riwayat"
+            android:checkable="true"
+            android:title="Riwayat"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/nav_merchant_list"
+            android:checkable="true"
+            android:title="Merchant List"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/nav_profile"
+            android:checkable="true"
+            android:title="Profil Saya"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:checkable="true"
+            android:title="Bantuan"
+            app:showAsAction="ifRoom" />
+
+
+    </group>
+
+</menu>

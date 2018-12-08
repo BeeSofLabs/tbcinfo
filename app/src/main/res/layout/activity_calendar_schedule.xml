@@ -1,40 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_grey2"
     android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/main_content_bottom_slide"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <ScrollView
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/color_yellow"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:itemIconTint="@color/color_white"
+            app:itemTextColor="@color/color_white"
+            app:menu="@menu/menu_main_drawer">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_black_transparent80" />
+
+                <TextView
+                    android:id="@+id/logout_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logout_action"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </android.support.design.widget.NavigationView>
+
+        <include
+            layout="@layout/content_calendar"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:visibility="visible" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
 
-                <com.beelabs.tbcinfo.ui.component.calendar.view.CalendarPlayScheduleView
-                    android:id="@+id/calendar_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:forwardButtonSrc="@drawable/yellow_arrow_right"
-                    app:headerColor="@color/color_red"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:previousButtonSrc="@drawable/yellow_arrow_left"
-                    app:todayLabelColor="@color/color_red"
-                    app:type="classic" />
+    </android.support.v4.widget.DrawerLayout>
 
-            </LinearLayout>
-        </ScrollView>
-    </FrameLayout>
+
 </LinearLayout>

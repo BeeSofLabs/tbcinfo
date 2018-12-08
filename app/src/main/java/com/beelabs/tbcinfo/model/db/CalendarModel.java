@@ -1,18 +1,21 @@
 package com.beelabs.tbcinfo.model.db;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by arysuryawan on 2/15/18.
  */
 
 public class CalendarModel extends RealmObject {
+    @PrimaryKey
     private int id;
     private long date;
     private String name;
     private boolean status;
     private boolean delete;
-    private int childID;
+    private RealmList<Integer> eventId;
 
     public int getId() {
         return id;
@@ -54,11 +57,11 @@ public class CalendarModel extends RealmObject {
         this.delete = delete;
     }
 
-    public int getChildID() {
-        return childID;
+    public RealmList<Integer> getEventId() {
+        return eventId;
     }
 
-    public void setChildID(int childID) {
-        this.childID = childID;
+    public void setEventId(RealmList<Integer> eventId) {
+        this.eventId = eventId;
     }
 }

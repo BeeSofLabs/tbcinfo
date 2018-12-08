@@ -22,12 +22,12 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/back_button"
+                android:id="@+id/drawer_button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
                 android:paddingLeft="10dp"
-                android:src="@mipmap/arrow_left"
+                android:src="@drawable/menu_drawer"
                 app:layout_constraintLeft_toLeftOf="parent" />
 
             <ImageButton

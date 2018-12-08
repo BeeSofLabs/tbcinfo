@@ -3,12 +3,12 @@ package com.beelabs.tbcinfo.model.db;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
-public class DoctorModel extends RealmObject {
+public class EventModel extends RealmObject {
 
     @PrimaryKey
     private int id;
     private String name;
-    private String pathAvatar;
+    private String description;
 
     public int getId() {
         return id;
@@ -26,11 +26,11 @@ public class DoctorModel extends RealmObject {
         this.name = name;
     }
 
-    public String getPathAvatar() {
-        return pathAvatar;
+    public String getDescription() {
+        return description;
     }
 
-    public void setPathAvatar(String pathAvatar) {
-        this.pathAvatar = pathAvatar;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
