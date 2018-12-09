@@ -15,27 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3148eaf-028a-440a-9da7-0218c198c4b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/ArticleActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/BiodataActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/NotifActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/ReminderAlarmActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/StatisticActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/left_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_article.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_biodata.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notif.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_reminder_alarm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_statistic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/CalendarScheduleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/CalendarScheduleActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/HomeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res-content/layout/calendar_play_schedule_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res-content/layout/calendar_play_schedule_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar_schedule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar_schedule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_sub_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_sub_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main_drawer.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,7 +43,7 @@
           <file leaf-file-name="HomeActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/HomeActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-569">
+                <state relative-caret-position="-564">
                   <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -2783,7 +2763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544282026063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add listener for navigation drawer">
+      <created>1544337808340</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544337808340</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2810,7 +2797,7 @@
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39913544" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39913544" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -2864,7 +2851,8 @@
     <MESSAGE value="add calendar view" />
     <MESSAGE value="add model db and navigation menu drawer layout" />
     <MESSAGE value="add home activity layout and refactor navigation drawer layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="add home activity layout and refactor navigation drawer layout" />
+    <MESSAGE value="add listener for navigation drawer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add listener for navigation drawer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3131,6 +3119,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3148,6 +3139,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3307,7 +3301,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/beelabs/tbcinfo/ui/activity/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-569">
+        <state relative-caret-position="-564">
           <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
