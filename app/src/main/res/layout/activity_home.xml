@@ -21,45 +21,11 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@color/color_yellow"
-            android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header"
             app:itemIconTint="@color/color_white"
             app:itemTextColor="@color/color_white"
-            app:menu="@menu/menu_main_drawer">
+            app:menu="@menu/menu_main_drawer" />
 
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_gravity="bottom">
-
-                <View
-                    android:id="@+id/line"
-                    android:layout_width="match_parent"
-                    android:layout_height=".5dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@color/color_black_transparent80" />
-
-                <TextView
-                    android:id="@+id/logout_action"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/line"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/color_white"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_version"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/logout_action"
-                    android:layout_centerHorizontal="true"
-                    android:textSize="12sp" />
-
-            </RelativeLayout>
-
-        </android.support.design.widget.NavigationView>
 
         <include layout="@layout/content_sub_home" />
 

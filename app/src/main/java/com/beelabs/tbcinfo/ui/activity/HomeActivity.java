@@ -34,44 +34,51 @@ public class HomeActivity extends BaseActivity {
             case R.id.nav_dashboard:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
-//                intent = new Intent(this, TodoListActivity.class);
-//                startActivity(intent);
+                intent = new Intent(this, HomeActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+
                 return true;
             case R.id.nav_calendar:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
-//                intent = new Intent(this, ProfileActivity.class);
-//                startActivity(intent);
+                intent = new Intent(this, CalendarScheduleActivity.class);
+                startActivity(intent);
+
                 return true;
             case R.id.nav_alarm:
+                intent = new Intent(this, ReminderAlarmActivity.class);
+                startActivity(intent);
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
-//                intent = new Intent(this, HistoryActivity.class);
-//                startActivity(intent);
+
                 return true;
             case R.id.nav_article:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
-//                intent = new Intent(this, MerchantListActivity.class);
-//                startActivity(intent);
-                return true;
+                intent = new Intent(this, ArticleActivity.class);
+                startActivity(intent);
 
+                return true;
             case R.id.nav_statistic:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
-
+                intent = new Intent(this, StatisticActivity.class);
+                startActivity(intent);
                 return true;
 
             case R.id.nav_notif:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
-
+                intent = new Intent(this, NotifActivity.class);
+                startActivity(intent);
                 return true;
 
             case R.id.nav_biodata:
                 drawerLayout.closeDrawers();
                 item.setChecked(false);
-
+                intent = new Intent(this, BiodataActivity.class);
+                startActivity(intent);
                 return true;
         }
         return false;
@@ -85,11 +92,18 @@ public class HomeActivity extends BaseActivity {
 
         ButterKnife.bind(this);
 
+        navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(mNavListener);
     }
 
     @OnClick(R.id.button_menu)
-    public void onDrawerNav(View view){
+    public void onDrawerNav(View view) {
         drawerLayout.openDrawer(navigationView);
+    }
+
+    @OnClick(R.id.button_calendar)
+    public void onCalendarView(View view) {
+        Intent intent = new Intent(this, CalendarScheduleActivity.class);
+        startActivity(intent);
     }
 }

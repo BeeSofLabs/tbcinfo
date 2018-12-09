@@ -10,21 +10,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
-        <activity android:name=".ui.activity.CalendarScheduleActivity" android:screenOrientation="portrait">
+        <activity
+            android:name=".ui.activity.CalendarScheduleActivity"
+            android:screenOrientation="portrait">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
 
-        <activity android:name=".ui.activity.HomeActivity" android:screenOrientation="portrait">
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.activity.ReminderAlarmActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.ArticleActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.StatisticActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.NotifActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.BiodataActivity"
+            android:screenOrientation="portrait" />
 
     </application>
 

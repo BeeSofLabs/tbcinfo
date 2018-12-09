@@ -59,6 +59,7 @@
                 android:layout_height="120dp" />
 
             <FrameLayout
+                android:id="@+id/main_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/pager_jadwal">
@@ -73,9 +74,9 @@
             </FrameLayout>
 
             <TextView
+                android:layout_below="@+id/main_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:layout_margin="20dp"
                 android:text="Waktu Sekarang 8 Des 2018 21:32:33"
                 android:textAlignment="center"

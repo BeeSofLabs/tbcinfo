@@ -4,25 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_dashboard"
             android:checkable="true"
             android:icon="@drawable/home_icon"
             android:title="Beranda"
             app:showAsAction="ifRoom" />
+
         <item
             android:id="@+id/nav_calendar"
             android:checkable="true"
             android:icon="@drawable/calendar_icon"
             android:title="Kalendar"
             app:showAsAction="ifRoom" />
+
         <item
             android:id="@+id/nav_alarm"
             android:checkable="true"
             android:icon="@drawable/alarm_icon"
             android:title="Alarm"
             app:showAsAction="ifRoom" />
+
         <item
             android:id="@+id/nav_article"
             android:checkable="true"
@@ -50,8 +54,6 @@
             android:icon="@drawable/biodata_icon"
             android:title="Biodata"
             app:showAsAction="ifRoom" />
-
-
     </group>
 
 </menu>

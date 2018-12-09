@@ -8,7 +8,7 @@
     android:paddingBottom="12dp"
     android:paddingLeft="12dp"
     android:paddingRight="12dp"
-    android:paddingTop="64dp"
+    android:paddingTop="20dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView

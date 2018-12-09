@@ -1,19 +1,11 @@
 package com.beelabs.tbcinfo.ui.activity;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -53,68 +45,9 @@ public class CalendarScheduleActivity extends BaseActivity {
     @BindView(R.id.full_date_name)
     TextView fullDateNameText;
 
-    @BindView(R.id.nav_view)
-    NavigationView navigationView;
-
-    @BindView(R.id.drawer_layout)
-    DrawerLayout drawerLayout;
-
     private View panelSlide;
     private View panelSlideBottom;
     private static int childId;
-
-
-    private NavigationView.OnNavigationItemSelectedListener mNavListener = item -> {
-        Intent intent;
-
-        switch (item.getItemId()) {
-
-            case R.id.nav_dashboard:
-                drawerLayout.closeDrawers();
-                item.setChecked(false);
-//                intent = new Intent(this, TodoListActivity.class);
-//                startActivity(intent);
-                return true;
-            case R.id.nav_calendar:
-                drawerLayout.closeDrawers();
-                item.setChecked(false);
-//                intent = new Intent(this, ProfileActivity.class);
-//                startActivity(intent);
-                return true;
-            case R.id.nav_alarm:
-                drawerLayout.closeDrawers();
-                item.setChecked(false);
-//                intent = new Intent(this, HistoryActivity.class);
-//                startActivity(intent);
-                return true;
-            case R.id.nav_article:
-                drawerLayout.closeDrawers();
-                item.setChecked(false);
-//                intent = new Intent(this, MerchantListActivity.class);
-//                startActivity(intent);
-                return true;
-
-            case R.id.nav_statistic:
-                drawerLayout.closeDrawers();
-                item.setChecked(false);
-
-                return true;
-
-            case R.id.nav_notif:
-                drawerLayout.closeDrawers();
-                item.setChecked(false);
-
-                return true;
-
-            case R.id.nav_biodata:
-                drawerLayout.closeDrawers();
-                item.setChecked(false);
-
-                return true;
-        }
-        return false;
-
-    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -136,11 +69,8 @@ public class CalendarScheduleActivity extends BaseActivity {
             }
         });
 
-        navigationView.setNavigationItemSelectedListener(mNavListener);
-
 //        createKidDropdown();
     }
-
 
 
     private void bindDataCalendarEvent(Date date, CalendarModel cal) {
@@ -248,11 +178,6 @@ public class CalendarScheduleActivity extends BaseActivity {
         });
     }
 
-    @OnClick(R.id.drawer_button)
-    public void onDrawerNav(View view){
-        drawerLayout.openDrawer(navigationView);
-    }
-
     @Override
     public void onBackPressed() {
         try {
@@ -265,25 +190,8 @@ public class CalendarScheduleActivity extends BaseActivity {
         }
     }
 
-//    @Override
-//    protected void onApiResponseCallback(BaseResponse br, int responseCode, Response response) {
-//        if (response.isSuccessful()) {
-//            CalendarResponseModel model = (CalendarResponseModel) br;
-//            if (model.getMeta().isStatus()) {
-//                CalendarDao.saveCalendar(childId, model.getData(), this);
-//                Toast.makeText(this, "API OK", Toast.LENGTH_SHORT).show();
-//
-//                List<EventDay> events = new ArrayList<>();
-//
-//                for (DataCalendarResponse data : model.getData()) {
-//                    for (IdeaStatus ids : data.getIdeas()) {
-//                        int iconId = (ids.isStatus()) ? R.drawable.circle_yellow_fill : R.drawable.circle_red_fill;
-//                        Calendar cal = DateUtil.convertToCalendar(data.getDate());
-//                        events.add(new EventDay(cal, iconId));
-//                    }
-//                }
-//                calendarView.setEvents(events);
-//            }
-//        }
-//    }
+    @OnClick(R.id.back_button)
+    public void onBack(View view){
+        onBackPressed();
+    }
 }
