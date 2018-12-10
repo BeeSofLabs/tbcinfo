@@ -26,4 +26,11 @@ public interface IConfig {
             "November_November",
             "December_Desember"
     };
+
+
+    // Session
+    String SESSION_LOGIN_KEY = "session_login";
+    String SESSION_CREDENTIAL_KEY = "credential";
+
+    String KEY_FIRST_INSTALL = "first_install";
 }

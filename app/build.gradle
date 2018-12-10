@@ -80,6 +80,8 @@ dependencies {
     implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
     implementation 'com.applandeo:material-calendar-view:1.4.0'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.github.tajchert:nammu:1.2.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
