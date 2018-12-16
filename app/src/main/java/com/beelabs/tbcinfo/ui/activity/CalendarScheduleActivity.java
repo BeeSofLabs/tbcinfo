@@ -15,7 +15,7 @@ import com.applandeo.materialcalendarview.EventDay;
 import com.applandeo.materialcalendarview.exceptions.OutOfDateRangeException;
 import com.applandeo.materialcalendarview.listeners.OnDayClickListener;
 import com.beelabs.tbcinfo.R;
-import com.beelabs.tbcinfo.model.db.CalendarModel;
+import com.beelabs.tbcinfo.model.db.ScheduleModel;
 import com.beelabs.tbcinfo.ui.component.SlidePanel;
 import com.beelabs.tbcinfo.ui.component.calendar.view.CalendarPlayScheduleView;
 import com.beelabs.tbcinfo.util.DateUtil;
@@ -73,7 +73,7 @@ public class CalendarScheduleActivity extends BaseActivity {
     }
 
 
-    private void bindDataCalendarEvent(Date date, CalendarModel cal) {
+    private void bindDataCalendarEvent(Date date, ScheduleModel cal) {
         fullDateNameText.setText(DateUtil.formatStringWithDay(date, CalendarScheduleActivity.this));
         calendarDetailEvent.setVisibility(View.VISIBLE);
 

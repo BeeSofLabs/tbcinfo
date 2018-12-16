@@ -6,15 +6,24 @@ import io.realm.annotations.PrimaryKey;
 public class ArticleModel extends RealmObject {
 
     @PrimaryKey
-    private int id;
+    private long id;
     private String title;
     private String resourceUrl;
 
-    public int getId() {
+    public ArticleModel() {
+    }
+
+    public ArticleModel(long id, String title, String resourceUrl) {
+        this.id = id;
+        this.title = title;
+        this.resourceUrl = resourceUrl;
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

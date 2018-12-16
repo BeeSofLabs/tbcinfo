@@ -9,6 +9,7 @@ public class EventModel extends RealmObject {
     private int id;
     private String name;
     private String description;
+    private int typeEvent;
 
     public int getId() {
         return id;
@@ -32,5 +33,13 @@ public class EventModel extends RealmObject {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getTypeEvent() {
+        return typeEvent;
+    }
+
+    public void setTypeEvent(int typeEvent) {
+        this.typeEvent = typeEvent;
     }
 }

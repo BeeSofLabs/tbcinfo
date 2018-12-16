@@ -8,7 +8,7 @@ public class DoctorModel extends RealmObject {
     @PrimaryKey
     private int id;
     private String name;
-    private String pathAvatar;
+    private String urlAvatar;
 
     public int getId() {
         return id;
@@ -26,11 +26,11 @@ public class DoctorModel extends RealmObject {
         this.name = name;
     }
 
-    public String getPathAvatar() {
-        return pathAvatar;
+    public String getUrlAvatar() {
+        return urlAvatar;
     }
 
-    public void setPathAvatar(String pathAvatar) {
-        this.pathAvatar = pathAvatar;
+    public void setUrlAvatar(String urlAvatar) {
+        this.urlAvatar = urlAvatar;
     }
 }

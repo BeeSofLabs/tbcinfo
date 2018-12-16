@@ -8,14 +8,13 @@ import io.realm.annotations.PrimaryKey;
  * Created by arysuryawan on 2/15/18.
  */
 
-public class CalendarModel extends RealmObject {
+public class ScheduleModel extends RealmObject {
     @PrimaryKey
     private int id;
     private long date;
     private String name;
     private boolean status;
-    private boolean delete;
-    private RealmList<Integer> eventId;
+    private RealmList<EventModel> events;
 
     public int getId() {
         return id;
@@ -49,19 +48,12 @@ public class CalendarModel extends RealmObject {
         this.status = status;
     }
 
-    public boolean isDelete() {
-        return delete;
+
+    public RealmList<EventModel> getEvents() {
+        return events;
     }
 
-    public void setDelete(boolean delete) {
-        this.delete = delete;
-    }
-
-    public RealmList<Integer> getEventId() {
-        return eventId;
-    }
-
-    public void setEventId(RealmList<Integer> eventId) {
-        this.eventId = eventId;
+    public void setEvents(RealmList<EventModel> events) {
+        this.events = events;
     }
 }
